@@ -1,0 +1,146 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+  background: #F8F8F8;
+  height: 100vh;
+  font-size: 16px;
+  color: #495057;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-top: 0;
+  background: #f8f9fa;
+}
+
+h1, h2 {
+  font-weight: 300;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.625rem;
+}
+
+.header, .form {
+  position: absolute;
+  width: 100%;
+  left: 50%; /* relative to nearest positioned ancestor or body element */
+  top: 40%; /*  relative to nearest positioned ancestor or body element */
+  transform: translate(-50%, -40%); /* relative to element's height & width */
+}
+
+.maps {
+  height: 100%;
+  width: 100%;
+}
+
+.maps #map {
+  height: 100%;
+  width: 100%;
+}
+
+.header .image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.header .image .profile {
+  height: 150px;
+  width: 150px;
+  border: 1px solid #f8f9fa;
+  border-radius: 50%;
+  background: url("./assets/../../img/dalev.jpeg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.header .name {
+  padding-top: 2rem;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.header h1, h3 {
+  margin-top: 0;
+}
+
+.header .links {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.header .links a {
+  color: #495057;
+}
+
+.header .links a:hover {
+  color: #212529;
+}
+
+.pics {
+  width: 100%;
+  text-align: center;
+}
+
+.pics img {
+  width: 150px;
+}
+
+form { max-width:420px; margin:0 auto; }
+
+.form {
+  background: #f8f9fa;
+  padding: 5px;
+}
+
+.feedback-input {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid lightgray;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #495057; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: lightgray;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#495057; }

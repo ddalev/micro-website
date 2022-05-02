@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.dalev.net/$1 [R,L]
+
+<FilesMatch "\.(ico|jpg|jpeg|png|gif|mp4|svg|ttf|woff|eot)$">
+  Header set Cache-Control "max-age=15780000"
+</FilesMatch>
